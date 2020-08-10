@@ -1,0 +1,110 @@
+.hi{
+    margin: 0;
+    border: 0;
+}
+
+.dragon-overlay
+{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.outer-box
+{
+    border: 2px solid black;
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    background-color: #485461;
+    background-image: linear-gradient(120deg, #485461 0%, #28313b 74%);
+}
+
+.smalley
+{
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    animation: rotating 5s linear infinite;
+}
+.dra-player
+{
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    transform: rotate(90deg);
+}
+.dra-message
+{
+    font-size: 1rem;
+    color:rgba(17, 98, 173,0.9);
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+.dra-button
+{
+    width: 3.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgba(17, 98, 173,0.9);
+    border-radius: 5px;
+    text-align: center;
+    height:1.5rem;
+    color:white;
+    user-select: none;
+}
+.dra-controls
+{    
+    position: relative;
+    overflow: hidden;
+    border: 1.5px solid black;
+    border-radius: 4%;
+    width: 11.7rem;
+    height: 6.6rem;
+    margin: 1vw;
+}
+
+.dra-left
+{
+    position: absolute;
+    top:2.5rem;
+    left: 0.5rem;
+}
+
+.dra-up
+{
+    position: absolute;
+    top:0.5rem;
+    left:4rem;
+}
+
+.dra-right
+{
+    position: absolute;
+    top:2.5rem;
+    left:7.5rem;
+}
+
+.dra-down
+{
+    position: absolute;
+    top:4.5rem;
+    left:4rem;
+}
+
+
+@keyframes rotating {
+    from {
+     
+      transform: rotate(360deg);
+    }
+    to {
+     
+      transform: rotate(0deg);
+    }
+  }

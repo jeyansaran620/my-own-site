@@ -1,0 +1,79 @@
+.hi{
+    padding: 0;
+    margin: 0;
+}
+
+.XO-desc
+{
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(17, 98, 173,0.9);
+    width:70vw;
+    text-align: center;
+    margin-top: 2vw;
+    margin-left: 15vw;
+    padding: 10px;
+}
+.XO-all
+{
+    background-color: rgba(0,0,0,0.4);
+    z-index: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.XO-boxes
+{
+    width:39vw;
+    height:39vw;
+    margin-left:30.5vw;
+    z-index: 0;
+    position: relative;
+}
+.XO-cont
+{
+    width:13vw;
+    height:13vw;
+    border:solid black 1px;
+    padding: 0;
+    margin: 0;
+}
+.XO-point
+{
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 0;
+    border: 0;
+    font-size:7vw;
+    margin-top:1.5vw;
+    margin-left:4vw;
+}
+.XO-bottom
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.XO-reset
+{
+    width: 3.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgba(17, 98, 173,0.9);
+    border-radius: 5px;
+    text-align: center;
+    height:1.5rem;
+    color:white;
+    margin-top: 2vw;
+    margin-left: 70vw;
+    display: inline-block;
+}
+.XO-win
+{
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(17, 98, 173,0.9);
+    margin-top: 2vw;
+    margin-left: 70vw;
+}

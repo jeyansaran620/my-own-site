@@ -1,0 +1,131 @@
+.hi{
+    padding: 0;
+    margin: 0;
+}
+.SL-board
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+}
+.SL-Box
+{
+    background: url('./SnakeLadder.jpg');
+    background-size: 20rem;
+    background-repeat: no-repeat;
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+    overflow: hidden;
+}
+.SL-player
+{
+    background: url('./player.png');
+    background-size: 1.6rem;
+    background-repeat: no-repeat;
+    width: 1.6rem;
+    height: 1.6rem;
+    position: absolute;
+    transition: all 1.5s;
+}
+.SL-message
+{
+    font-size: 1rem;
+    color:rgba(17, 98, 173,0.9);
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+.SL-panel
+{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: row;
+}
+.Dice
+{
+    width:3rem;
+    height:3rem;
+    margin-left: 60vw;
+    background-color: rgba(17, 98, 173,0.9);
+    border-radius: 10px;
+    position: relative;
+    animation: rotations 1s;
+}
+.Dice-rotate
+{  
+    animation: rotationsX 1s;
+}
+@keyframes rotations
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(1080deg);
+    }
+}
+@keyframes rotationsX
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(1080deg);
+    }
+}
+.Dice-inner
+{  
+    width:3rem;
+    height:3rem;
+}
+.Dice1
+{
+    background-image: url(./Dice1.png);
+    background-size: 3rem;
+}
+
+.Dice2
+{
+    background-image: url(./Dice2.png);
+    background-size: 3rem;
+}
+.Dice3
+{
+    background-image: url(./Dice3.png);
+    background-size: 3rem;
+}
+.Dice4
+{
+    background-image: url(./Dice4.png);
+    background-size: 3rem;
+}
+.Dice5
+{
+    background-image: url(./Dice5.png);
+    background-size: 3rem;
+}
+.Dice6
+{
+    background-image: url(./Dice6.png);
+    background-size: 3rem;
+}
+
+.SL-reset
+{
+    width: 3.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgba(17, 98, 173,0.9);
+    border-radius: 5px;
+    text-align: center;
+    height:1.5rem;
+    margin: 1rem;
+    color:white;
+    display: inline-block;
+}

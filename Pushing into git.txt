@@ -1,0 +1,5 @@
+git init
+git remote add origin http://github.com/jeyansaran620/jeyansaran620.github.io.git
+git add -A
+git commit -m "completing Site"
+git push -f origin master

@@ -1,0 +1,264 @@
+.hi{
+    
+  font-size: 1.3rem;
+  padding: 5px;
+}
+
+.heading
+{
+  font-size: 1.3rem;
+  padding: 10px;
+  font-weight: bold;
+  color: rgba(17, 98, 173,0.9);
+  text-shadow: 0 0 0 transparent, 0 0 10px rgb(11, 127, 235);
+  animation:buzz 0.5s infinite alternate;
+}
+.details
+{
+    font-size: 1.2rem;
+    color:rgba(7, 7, 39, 0.87);
+    text-align: left;
+    padding: 5px;
+    text-shadow: 0 0 0 transparent, 0 0 2px rgb(11, 127, 235);
+}
+@keyframes buzz
+{
+    60%
+    {
+        opacity: 0.80;
+    }
+}
+.master-piece
+{
+    background-color:rgba(0,0,0,0.3);
+    border-radius: 3px;
+    border: solid 2px rgba(0,0,0,0.6);
+    height: 15rem;
+}
+@media(min-width:600px)
+{
+    .master-piece
+    {
+        height: 20rem;
+    }
+}
+@media(min-width:1100px)
+{
+    .master-piece
+    {
+        height: 25rem;
+    }
+}
+.linkedin-trail 
+{
+    position: relative;
+
+}
+.linkedin-trail img
+{
+    width:99.68vw;
+}
+.linkedin-trail .profile-pic
+{
+    border:solid 0.4vw white;
+    border-radius: 50%;
+    box-shadow:0 0 5px rgba(0,0,0,0.6) ;
+    width:15vw;
+    position: absolute;
+    left:5vw;
+    top:40%;
+}
+.profile-name
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.profile-desc
+{
+    position: absolute;
+    left:5vw;
+    width:40vw;
+    top:125%;  
+    font-size: 1rem;
+}
+.college-name
+{ 
+    position: absolute;
+    right:0;
+    width:40vw;
+    top:125%;  
+    font-size: 1rem;
+
+}
+.profile-button
+{
+   background-color: rgb(40,103,178);
+   cursor: pointer;
+   position: relative;
+   width:8rem;
+   height:2rem;
+   border-radius:5px;
+}
+
+.profile-button a
+{
+ position: absolute;
+ color: white;
+ font-size: 1.1rem;
+ font-weight: bold;
+ top:0.2rem;
+ left:1rem;
+ text-decoration: none;
+}
+.github-trail
+{
+    height:5rem;
+    width: 100vw;
+    color:white;
+    background-color: rgb(20,20,20);
+    position: relative;
+}
+.github-trail .github-logo
+{
+    position: absolute;
+    width:2rem;
+    top:0;
+    left:5vw;
+    bottom:0;
+    margin: auto;
+}
+.gh-uname
+{
+    position: absolute;
+    font-size: 1.2rem;
+    line-height: 5rem;  
+    text-align: center;
+    left:15vw;
+   font-weight: bold;
+}
+.gh-uname a
+{
+ cursor: pointer;
+ color:white;
+ text-decoration: none;
+}
+.gh-status
+{
+    position: absolute;
+    width:2rem;
+    top:0;
+    right:5vw;
+    bottom:0;
+    margin: auto;
+}
+.repos
+{
+    font-size: 1.1rem;
+    padding: 10px;
+    padding-left: 5vw;
+}
+.repo-box
+{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.repo
+{
+    width:48vw;
+    height:5rem;
+    border: solid black 1px;
+    border-radius: 3px;
+    margin:auto;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.repo-name a
+{
+    font-size: 0.9rem;
+    color: black;
+    cursor: pointer;
+    color:rgb(26, 87, 219);
+    text-decoration: none;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    left:0;
+    right:0;
+    top:1.5rem;
+}
+.insta-trail
+{
+    width: 100vw;
+    height: 26.5rem;
+    border: solid black 1px;
+    border-radius: 3px;
+    position: relative;
+}
+.insta-logo
+{
+    position: absolute;
+    width:2rem;
+    top:2rem;
+    left:2rem;
+}
+
+.insta-name
+{
+    position: absolute;
+    width:6rem;
+    top:2.3rem;
+    left:4.5rem;
+}
+.insta-profile
+{
+    position: absolute;
+    width:6rem;
+    top:5rem;
+    left:3.5rem;
+    border-radius: 50%;
+}
+.insta-profile-name
+{
+    position: absolute;
+    font-size: 1.3rem;
+    width:50%;
+    top:5rem;
+    left:50vw;
+}
+.insta-desc
+{
+    position: absolute;
+    font-size: 1.1rem;
+    width:50%;
+    top:10rem;
+    left:50vw;
+}
+.insta-button-con
+{
+    position: absolute;
+    top:7.5rem;
+    left:50vw;
+}
+.insta-button
+{
+    background-color: rgb(23, 112, 245);
+    display: inline-block;
+    position: relative;
+    border-radius: 5px;
+    width: 5rem;
+    height: 2.2rem;
+}
+.insta-button a
+{
+    color:white;
+    text-decoration: none;
+    position: absolute;
+    text-align: center;
+    left:0;
+    right:0;
+    top:0.3rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}

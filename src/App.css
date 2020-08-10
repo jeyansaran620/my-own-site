@@ -1,0 +1,32 @@
+body
+{
+  width: 100vw;
+}
+.webSite
+{
+  width: 100vw;
+}
+main
+{
+  width: 100vw;
+  margin-top:10vh;
+}
+.Footer-nav
+{
+    background-color: black;
+  
+}
+.Footer
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Footer-items
+{
+    color:white;
+    font-size: 1.1rem;
+    padding:10px;
+    cursor: pointer;
+}

@@ -1,0 +1,54 @@
+.hi{
+    margin: 0;
+    border: 0;
+}
+
+.Puzzle-wrap
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+}
+.Puzzle-boxes
+{
+    border: 2px solid black;
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.Puzzle-box
+{
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.PZ-message
+{
+    font-size: 1rem;
+    color:rgba(17, 98, 173,0.9);
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+.PZ-reset
+{
+    width: 3.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgba(17, 98, 173,0.9);
+    border-radius: 5px;
+    text-align: center;
+    height:1.5rem;
+    color:white;
+    margin-top: 2vw;
+    margin-left: 60vw;
+    display: inline-block;
+}

@@ -1,0 +1,118 @@
+.hi{
+    padding:0;
+}
+
+.my-profile-bg
+{
+    background-color: rgba(17, 98, 173,0.9);
+}
+.my-profile-all
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.profile-container
+{
+    width: 50%;
+}
+.my-profile-name
+{
+  font-size: 1.8rem;
+  font-weight: bold;
+  color:white;
+  text-align: center;
+  line-height: 6rem;
+}
+.profile-contact
+{
+    background-color: rgba(0,0,0,0.9);
+   
+}
+.profile-contact-info-box
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.profile-contact-name
+{ 
+  font-size: 1.1rem;
+  font-weight: bold;
+  color:white;
+  text-align: center;
+  padding: 5px;
+}
+.profile-contact-info
+{
+    font-size:0.7rem;
+    color:white;
+    line-height: 1.5rem;
+    text-align: center;
+    padding: 5px;
+}
+.profile-contact-info a,.profile-contact-info a:link,.profile-contact-info a:visited,.profile-contact-info a:hover,.profile-contact-info a:active,
+.potency a,.potency a:link,.potency a:visited,.potency a:hover,.potency a:active,
+.educational-school a,.educational-school a:link,.educational-school a:visited,.educational-school a:hover,.educational-school a:active
+{
+    text-decoration: none;
+    color: white;
+}
+.profile-contact-info img
+{
+    width:1.1rem;
+    margin: 5px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.objective-title
+{
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    padding-top: 10px;
+  }
+  .objective-content
+{
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    padding: 5px;
+  }
+  .educational-field
+  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+  }
+  .educational-qual,.educational-mark,.educational-school,.educational-year
+  {
+      font-size: 0.8rem;
+      padding: 8px;
+      color: white;
+      text-align: center;
+  }
+  .potency
+  { 
+    font-size: 1rem;
+    padding: 8px;
+    color: white;
+    text-align: center;
+     display: flex;
+     flex-wrap: wrap;
+    justify-content: center;
+  }
+  .potency img
+  {
+     width:1rem;
+     margin:5px;
+  }
+  .Project-title
+  {
+      font-weight: bold;
+      padding: 5px;
+  }

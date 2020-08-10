@@ -1,0 +1,35 @@
+.hi{
+    left:0%;
+    bottom:0%;
+  }
+
+.works-heading
+{
+  font-size: 1.3rem;
+  padding: 5px;
+  font-weight: bold;
+  color: rgba(17, 98, 173,0.9);
+  text-shadow: 0 0 0 transparent, 0 0 10px rgb(11, 127, 235);
+}  
+
+.works-description
+{
+  width:70%;
+  margin-left: 15%;
+  text-align: center;
+  font-size: 1.1rem;
+  color:rgba(17, 98, 173,0.9);
+  font-weight: bold;
+  padding: 10px;
+}
+
+.works-description a,.works-description a:visited
+{
+   color:rgba(17, 98, 173,0.9);
+   font-weight: bolder;
+   cursor: pointer;
+}
+.media-content
+{
+  margin: 1rem;
+}
