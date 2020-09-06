@@ -1,7 +1,9 @@
 import React from 'react';
-import './playerlist.css';
-import Display from './Display';
 import Player from './Player';
+
+import {
+    Card,  CardText, CardBody, CardTitle, CardImg
+  } from 'reactstrap';
 
 const PlayerList = () => {
     let VideoList=[
@@ -92,30 +94,32 @@ const PlayerList = () => {
    const RenderList = (Videos) =>
    {
        return (
-    <div>
+    <div className="row row-content justify-content-center">
     {
         Videos.map((student, i) => {
 return(
-   <div key={i} >
-   <label className="my-name">{student.name}</label>
-   <div className="works-description">
-               {student.desc}          
-            </div>
-  <div className="media-content"> {student.content==="video"?<Player src={student.src}/>:<Display src={student.src} alter={student.name}/>}</div>
-   </div>
+    <Card key={i} className="col-12 col-sm-6 box mt-sm-0 mt-sm-1 mb-sm-0 mb-sm-1">
+    <CardBody>
+      <CardTitle className="text-center"><strong>{student.name}</strong></CardTitle>
+    </CardBody>
+    {student.content==="video"?
+    <Player src={student.src}/>:
+    <CardImg src={student.src} alt={student.name} />}
+    <CardBody>
+      <CardText className="p-3">{student.desc}</CardText>
+    </CardBody>
+  </Card>
 )
 })
-}
-    </div>
+} 
+</div>
        );
     
    }
-        return ( <div>
-            <div className="works-heading">
-            My Works
-            </div>
+     return( 
+     <div className="container">
       {RenderList(shuffle(VideoList))}
-</div>
+      </div>
 );
 }
 export default PlayerList;

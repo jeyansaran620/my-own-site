@@ -6,25 +6,23 @@ import PlayerList from './Player/playerList';
 import Interact from './Interact/Interact';
 import About from './About/About';
 import Profile from './Profile/Profile';
-import NotFound from './NotFound';
 import { 
   Route,
-  Switch 
+  Switch ,
+  Redirect
 } from "react-router-dom";
 
 const App = () => {
   return (
     <div> 
     <NavigBar />
-    <main>
     <Switch >
-          <Route exact  path="/" component={Profile} />
+          <Route exact  path="/Home" component={Profile} />
           <Route  path="/About" component={About} />
           <Route  path="/Interact" component={Interact} />
           <Route  path="/Promotions" component={PlayerList} />
-          <Route component={NotFound}/>
+          <Redirect to="/Home"/>
     </Switch >
-    </main>
     <Footer  />
     </div>
   )

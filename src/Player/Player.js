@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import './Player.css';
+
 class Player extends Component{
   constructor(props)
   {
@@ -67,13 +68,13 @@ render(){
           }>
             <div className="orange" style={{width:`${this.state.orangeWidth}%`}}></div>    
         </div>
-        <label className="time">{this.state.currentTime} s</label>
+        <label className="time">{this.state.currentTime}s</label>
         <div className="buttons">
             <button id="mute" className={this.state.volume} onClick={this.onVolumeChange} ></button>   
             <button id="play" className={this.state.play} onClick={this.onPlayChange}></button>  
             <button className="fullscreen" onClick={this.onFullScreen}></button>        
         </div>
-        <label className="time">-{Math.floor(this.state.videoDuration)-this.state.currentTime} s</label>
+        <label className="time">-{Math.floor(this.state.videoDuration)-this.state.currentTime}s</label>
     </div></div>
     </div>
   )

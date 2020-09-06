@@ -3,16 +3,6 @@ import './About.css';
 const About =() => {
   return (
     <div> 
-    <br/>
-    <div className="heading">
-    About Me
-    </div>
-    <div className="details">
-    To know better about a person it is brainy to surf their social media, As most of us are convoluted with that virtual cosmos.
-    <div>Surf Throughout my content and explore about me to a great extent.</div>
-    </div>
-    <br/>
-    <br/>
     <div className="heading">
     LinkedIn
     </div>
@@ -28,7 +18,8 @@ const About =() => {
      <br/>
      <div className="profile-button"><a href="https://www.linkedin.com/in/jeyansaran620">view profile</a></div>
      </div>
-    </div></div>
+    </div>
+    </div>
     <br/>
     <br/>
     <div className="heading">

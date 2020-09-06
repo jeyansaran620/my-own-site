@@ -1,5 +1,4 @@
-.hi{
-    
+.hi{  
   font-size: 1.3rem;
   padding: 5px;
 }
@@ -9,9 +8,8 @@
   font-size: 1.3rem;
   padding: 10px;
   font-weight: bold;
-  color: rgba(17, 98, 173,0.9);
-  text-shadow: 0 0 0 transparent, 0 0 10px rgb(11, 127, 235);
-  animation:buzz 0.5s infinite alternate;
+  color: #2E9CCA;
+  text-shadow: 0 0 0 transparent, 0 0 10px #2E9CCA;
 }
 .details
 {
@@ -20,13 +18,6 @@
     text-align: left;
     padding: 5px;
     text-shadow: 0 0 0 transparent, 0 0 2px rgb(11, 127, 235);
-}
-@keyframes buzz
-{
-    60%
-    {
-        opacity: 0.80;
-    }
 }
 .master-piece
 {

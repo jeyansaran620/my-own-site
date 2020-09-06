@@ -7,11 +7,11 @@
 {
     font-size: 1rem;
     font-weight: bold;
-    color: rgba(17, 98, 173,0.9);
+    color: floralwhite;
     width:70vw;
     text-align: center;
     margin-top: 2vw;
-    margin-left: 15vw;
+    margin-left: 6vw;
     padding: 10px;
 }
 .XO-all
@@ -26,7 +26,7 @@
 {
     width:39vw;
     height:39vw;
-    margin-left:30.5vw;
+    margin-left:18.5vw;
     z-index: 0;
     position: relative;
 }
@@ -66,14 +66,14 @@
     height:1.5rem;
     color:white;
     margin-top: 2vw;
-    margin-left: 70vw;
+    margin-left: 35vw;
     display: inline-block;
 }
 .XO-win
 {
     font-size: 1rem;
     font-weight: bold;
-    color: rgba(17, 98, 173,0.9);
+    color: floralwhite;
     margin-top: 2vw;
-    margin-left: 70vw;
+    margin-left: 30vw;
 }

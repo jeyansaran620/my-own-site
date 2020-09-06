@@ -1,32 +1,25 @@
-body
-{
-  width: 100vw;
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
 }
-.webSite
-{
-  width: 100vw;
+.navbar-dark {
+  background-color: #25274D;
 }
-main
-{
-  width: 100vw;
-  margin-top:10vh;
+
+.jumbotron {
+  padding:70px 30px 70px 30px;
+  margin:0px auto;
+  background: #464866 ;
+  color:floralwhite;
 }
-.Footer-nav
-{
-    background-color: black;
-  
+.footer{
+  background-color: #AAABB8;
+  margin: 0px auto;
+  padding: 20px 0px 20px 0px;
 }
-.Footer
+
+.box
 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.Footer-items
-{
-    color:white;
-    font-size: 1.1rem;
-    padding:10px;
-    cursor: pointer;
+  background-color: rgba(75, 78, 88, 0.86);
+  color: floralwhite;
 }

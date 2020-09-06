@@ -299,7 +299,7 @@ class XoGame extends Component{
   render()
   {
   return (
-    <div> 
+    <div className="container"> 
     <div className="XO-desc">Want to Play XO give a try here ...!!!</div>
     <div className="XO-boxes">
     {this.RenderBoxes()}

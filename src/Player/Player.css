@@ -37,11 +37,8 @@
     margin: auto;
 }
 .time{
-    font-size: 2vw;
-    color: white;
+    color: floralwhite;
     padding: 5px;
-    padding-left: 2vw;
-    padding-right: 2vw;
 }
 .buttons button{
     background:none;
@@ -99,6 +96,6 @@
 {
     margin-top: 1px;
     height: 8px;
-    background-color: dodgerblue;
+    background-color: #464866;
     border-radius: 5px 5px 5px 5px;
 }

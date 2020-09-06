@@ -1,32 +1,7 @@
 import React from 'react';
-import './Profile.css';
+
 const Profile =() => {
-    const Contacts =[
-        {
-           src:require('./e-mail.png'),
-           alt:"mail",
-           content:"jeyansaran620@gmail.com",
-           link:"mailto:jeyansaran620@gmail.com"
-        },
-        {
-            src:require('./call.png'),
-            alt:"call",
-            content:"+919677990745",
-            link:"tel:+919677990745"
-         },
-         {
-            src:require('./linked-in.png'),
-            alt:"linked-in",
-            content:"linkedin.com/in/jeyansaran620",
-            link:"http://www.linkedin.com/in/jeyansaran620"
-         },
-          {
-            src:require('./github.png'),
-            alt:"github",
-            content:"github.com/jeyansaran620",
-            link:"http://www.github.com/jeyansaran620"
-         }
-    ]
+
   const eduFields=[
       {
           qual:"SSLC",
@@ -49,8 +24,8 @@ const Profile =() => {
         school:"GCT",
         link:"http://www.gct.ac.in/",
         area:"Coimbatore",
-        year:"2021*",
-        mark:"CGPA-7.9*"
+        year:"2021",
+        mark:"CGPA-7.65*"
     },
   ]
   const Potency =[
@@ -130,48 +105,30 @@ const Projects =[
     }
 ]
 
+   const Objectives =() => {
+    return (
+    <p className="col-11 text-align-center">
+    Looking forward to work in a Dynamic and challenging environment with a putative organization to utilize my creativity and innovative thinking for the benefit of the organization and myself.  
+    </p> ) }
 
-
-  const ContactList =() => 
-  {
-      return ( <div className="profile-contact-info-box">
-          {
-  Contacts.map((con, i) => {
-    return(
-        <div key={i} className="profile-contact-info">
-    <img src={con.src}alt={con.alt}/>
-    <a href={con.link}>
-    {con.content}
-    </a>
-    </div>
-    )
-  })
-  }
-  </div>
-  )
-  }
     const EduField =() => 
     {
         return ( <div>
             {
     eduFields.map((edu, i) => {
       return(
-          <div key={i} >
-          <div className="educational-field">
-            <div className="educational-qual">
+          <div key={i} className="row mb-3 mb-sm-2">
+            <div className="col-4 col-sm-2">
             {edu.qual}
             </div>
-            <div className="educational-school">
-            <a href={edu.link}>
-            {edu.school}</a>,
-            <div>{edu.area}</div>
+            <div className="col-8 align-middle col-sm-6">
+            <a href={edu.link}>{edu.school}</a>,{edu.area}
             </div>
-            <div className="educational-year">
+            <div className="col-6 col-sm-1 align-middle">
             {edu.year}
             </div>
-            <div className="educational-mark">
+            <div className="col-6 col-sm-3 align-right">
             {edu.mark}
-            </div>
             </div>
           </div>
       )
@@ -188,8 +145,8 @@ const Projects =[
     Potency.map((pot, i) => {
       return(
           <div key={i} >
-          <div className="potency">    
-    <img src={require('./point.png')}alt="point"/><a href={pot.link}>{pot.value}</a>
+          <div className="pl-4 pb-2">    
+          <a href={pot.link}>{pot.value}</a>
           </div>
           </div>
       )
@@ -205,8 +162,7 @@ const Projects =[
     Techies.map((tech, i) => {
       return(
           <div key={i} >
-          <div className="potency">    
-    <img src={require('./point.png')}alt="point"/> {tech.value}
+           <div className="pl-4 pb-2"> {tech.value}
           </div>
           </div>
       )
@@ -222,7 +178,7 @@ const Projects =[
     Parts.map((part, i) => {
       return(
           <div key={i} >
-          <div className="potency">    
+         <div className="pl-4 pb-2 pr-2">      
           {part.value}
           </div>
           </div>
@@ -239,8 +195,8 @@ const Projects =[
     AI.map((a, i) => {
       return(
           <div key={i} >
-          <div className="potency">    
-          <img src={require('./point.png')}alt="point"/>  {a.value}
+          <div className="pl-4 pb-3">     
+          {a.value}
           </div>
           </div>
       )
@@ -256,7 +212,7 @@ const Projects =[
     Achieve.map((ac, i) => {
       return(
           <div key={i} >
-          <div className="potency">    
+          <div className="pl-4 pb-3 pt-3">
           {ac.value}
           </div>
           </div>
@@ -273,8 +229,8 @@ const Projects =[
     Projects.map((pro, i) => {
       return(
           <div key={i} >
-          <div className="potency">   
-         <div className="Project-title"> {pro.title}</div>
+           <div className="pl-4 pb-3">
+         <div className="h6 pl-2">{pro.title}</div>
           <div >
           {pro.value}
           </div>
@@ -286,7 +242,11 @@ const Projects =[
     </div>
     )
     }
-    const List =[
+    const List = [
+        {
+            title:"Objective",
+            content:Objectives()
+        },
         {
             title:"Educational Qualifications",
             content:EduField()
@@ -321,42 +281,22 @@ const GiveList = () =>
     return ( 
 List.map((li, i) => {
   return(
-      <div key={i} className="profile-container" >
-      <div className="objective-title">
+    <div key={i} className="col-12 col-sm-6 border rounded box mt-sm-0 mt-sm-1 mb-sm-0 mb-sm-1">
+    <div className="font-weight-bold m-2 pl-2 border-bottom pb-2"> 
       {li.title}
-      </div>
-      {li.content}
-      </div> 
+    </div>
+     {li.content}
+    </div>
   )
 })
 )
 }
 
   return (
-    <div> 
-    <div className="my-profile-bg">
-    <div className="my-profile-all">
-    <div className="profile-container">
-    <div className="my-profile-name">Jeyan K</div>
+    <div className="container">
+    <div  className="row row-content"> 
+      {GiveList()}
     </div>
-    <div className="profile-container">
-    <div className="profile-contact">
-    <div className="profile-contact-name">
-    Contact Me
-    </div>
-    {ContactList()}
-    </div>
-    </div>
-    <div className="profile-container">
-    <div className="objective-title">
-    Objective
-    </div>
-    <div className="objective-content">
-    Looking forward to work in a Dynamic and challenging environment with a putative organization to utilize my creativity and innovative thinking for the benefit of the organization and myself.  
-    </div>
-    </div>   
-  {GiveList()}
-    </div></div>
     </div>
   )
 }
