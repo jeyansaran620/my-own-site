@@ -40,12 +40,12 @@ const Footer = () =>{
               </div>
                 <div className="col-12 col-sm-6">
                     <div className="text-center">
-                        <div className="btn fa fa-mobile fa-lg" href="tel:+919677990745"></div>
-                        <div className="btn fa fa-envelope fa-lg" href="mailto:jeyansaran620@gmail.com"></div>
-                        <div className="btn fa fa-linkedin fa-lg" href="https://www.linkedin.com/in/jeyansaran620"></div>
-                        <div className="btn fa fa-github fa-lg" href="https://www.github.com/jeyansaran620"></div>
-                        <div className="btn" href="https://www.hackerrank.com/jeyansaran620"><strong>Hackerrank</strong></div>
-                        <div className="btn" href="https://auth.geeksforgeeks.org/user/jeyansaran620/profile"><strong>Geeks for Geeks</strong></div>
+                        <a className="btn fa fa-mobile fa-lg" href="tel:+919677990745"> </a>
+                        <a className="btn fa fa-envelope fa-lg" href="mailto:jeyansaran620@gmail.com"> </a>
+                        <a className="btn fa fa-linkedin fa-lg" href="https://www.linkedin.com/in/jeyansaran620"> </a>
+                        <a className="btn fa fa-github fa-lg" href="https://www.github.com/jeyansaran620"> </a>
+                        <a className="btn" href="https://www.hackerrank.com/jeyansaran620"><strong>Hackerrank</strong></a>
+                        <a className="btn" href="https://auth.geeksforgeeks.org/user/jeyansaran620/profile"><strong>Geeks for Geeks</strong></a>
                         </div>
                 </div>
                 </div>  

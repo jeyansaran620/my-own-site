@@ -47,7 +47,7 @@
 }
 .linkedin-trail img
 {
-    width:99.68vw;
+    width: 100%;
 }
 .linkedin-trail .profile-pic
 {
@@ -104,7 +104,6 @@
 .github-trail
 {
     height:5rem;
-    width: 100vw;
     color:white;
     background-color: rgb(20,20,20);
     position: relative;
@@ -181,11 +180,11 @@
 }
 .insta-trail
 {
-    width: 100vw;
     height: 26.5rem;
     border: solid black 1px;
     border-radius: 3px;
     position: relative;
+    width: 100%;
 }
 .insta-logo
 {

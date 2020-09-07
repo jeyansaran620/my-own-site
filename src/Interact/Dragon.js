@@ -16,7 +16,8 @@ class Dragon extends React.Component
         Tplayer:0,
         Lplayer:1,
         Points:0,
-        Lost:false
+        Lost:false,
+        started:false
     }
 
     moveUp = () => 
@@ -59,12 +60,11 @@ class Dragon extends React.Component
     }
     resetAll = () =>
     {
-
         clearInterval(this.interval)
-
         this.setState({
             Tplayer: (18)*crypto.getRandomValues(new Uint32Array(1))[0]/2**32|0,
-            Points:0
+            Points:0,
+            started : true
         })
 
         this.interval = setInterval(() => {
@@ -172,13 +172,13 @@ class Dragon extends React.Component
                 </div>
                 </div>
                 :null}
-                <div className="dra-button" onClick={() => this.resetAll()}>{this.state.Lost? 'reset' : 'start' }</div>
+                <div className="dra-button" onClick={() => this.resetAll()}>{this.state.started? (this.state.Lost? 'start' : 'reset') : 'start' }</div>
                 <div className='dra-message'>Score:{Points}</div>
                 <div className='dra-controls'>
-                <div className='dra-button dra-left' onClick={() => this.moveLeft()}>🡰</div>
-                <div className='dra-button dra-up' onClick={() => this.moveUp()}>🡱</div>
-                <div className='dra-button dra-right' onClick={() => this.moveRight()}>🡲</div>
-                <div className='dra-button dra-down' onClick={() => this.moveDown()}>🡳</div>
+                <div className='dra-button dra-left fa fa-arrow-left fa-sm' onClick={() => this.moveLeft()}></div>
+                <div className='dra-button dra-up fa fa-arrow-up fa-sm' onClick={() => this.moveUp()}></div>
+                <div className='dra-button dra-right fa fa-arrow-right fa-sm' onClick={() => this.moveRight()}></div>
+                <div className='dra-button dra-down fa fa-arrow-down fa-sm' onClick={() => this.moveDown()}></div>
                 </div>
             </div>
         )
