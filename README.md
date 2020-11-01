@@ -10,7 +10,7 @@
     Games are done with javascript.
     
 
-# [My Portfolio:](jeyansaran620.github.io)
+# [My Portfolio:](https://jeyansaran620.github.io)
     This one Tells me who i am and what i have done so far...
     A quote clarifies that people judge you with what you are showing to them and that matters a lot.
 > Dont Judge me too soon with what you know about me, I decide what to show with you.
