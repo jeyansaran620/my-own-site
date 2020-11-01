@@ -12,9 +12,9 @@
 
 # [My Portfolio:](jeyansaran620.github.io)
     This one Tells me who i am and what i have done so far...
-     > Dont Judge me too soon with what you know about me, I decide what to show with who
-     > -A friend of mine
-    As the quote clarifies that people judge you with what you are showing to them and that matters a lot.
+    A quote clarifies that people judge you with what you are showing to them and that matters a lot.
+> Dont Judge me too soon with what you know about me, I decide what to show with you.
+> - A friend of mine
  
 ## Technologies Used:
     React Js - yes its a pure React website made with Routers to the pages.
