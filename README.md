@@ -12,8 +12,8 @@
 
 # [My Portfolio:](jeyansaran620.github.io)
     This one Tells me who i am and what i have done so far...
- > Dont Judge me too soon with what you know about me, I decide what to show with who  
- > - A friend of mine
+     > Dont Judge me too soon with what you know about me, I decide what to show with who
+     > -A friend of mine
     As the quote clarifies that people judge you with what you are showing to them and that matters a lot.
  
 ## Technologies Used:
