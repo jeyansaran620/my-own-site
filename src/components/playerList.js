@@ -1,5 +1,6 @@
 import React from 'react';
 import Player from './Player';
+import Linker from './linker';
 
 import {
     Card,  CardText, CardBody, CardTitle, CardImg
@@ -117,8 +118,11 @@ return(
     
    }
      return( 
+    <div>
      <div className="container">
       {RenderList(shuffle(VideoList))}
+      </div>
+      <Linker page={2}/>
       </div>
 );
 }

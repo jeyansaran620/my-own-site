@@ -25,7 +25,7 @@ const Items = [
     content:"Have Fun",
     link:"Interact",
     icon:"gamepad",
-    message: "Having a Hobby is not so bad, what if! one had spend some time on javascript to make it playable, Visit 'Lets Interact' to play the Games i have created..."
+    message: "Having a Hobby is not so bad, what if! one had spend some time on javascript to make it playable, Visit 'Have Fun' to play the Games i have created..."
   }
  ]
 
@@ -35,14 +35,14 @@ const Linker = ({page}) =>{
       <div className="container">       
       {
      Items.filter((item,i) => i !== page ).map((item, i) => {
-         console.log(i,page)
    return(
     <div key={i} className="row justify-content-center linkerBox m-2"> 
-    <div className="col-10 p-4">
+
+    <div className="col-10 linkerDet p-4">
         {item.message}
     </div>
-      <div className={`col-2 m-auto text-center ${i%2 ===0 ? 'order-first' : '' }`}>
-      <Link to={`/${item.link}`} className={`fa fa-${item.icon} fa-lg`}></Link>
+      <div className={`col-2 m-auto text-center linkerIco ${i%2 ===0 ? 'order-first' : '' }`}>
+      <Link to={`/${item.link}`} className={`fa fa-${item.icon} fa-lg`} style={{color: "#464866"}}></Link>
       </div>
   </div>
   )

@@ -1,8 +1,3 @@
-.hi{
-  left:0%;
-  bottom:0%;
-}
-
 .cvideo
 {
     position: relative;
@@ -52,32 +47,32 @@
 
 .buttons #mute:before
 {
-    content: url(/public/photos/mute.png);
+    content: url(/photos/mute.png);
 }
 .buttons #mute.unmute:before
 {
-    content: url(/public/photos/mute.png);
+    content: url(/photos/mute.png);
 }
 .buttons #mute.mute:before
 {
-    content: url(/public/photos/unmute.png);
+    content: url(/photos/unmute.png);
 }
 .buttons #play:before
 {
-    content: url(/public/photos/play.png);
+    content: url(/photos/play.png);
 }
 .buttons #play.play:before
 {
-    content: url(/public/photos/play.png);
+    content: url(/photos/play.png);
 }
 .buttons #play.pause:before
 {
-    content: url(/public/photos/pause.png);
+    content: url(/photos/pause.png);
 }
 
 .buttons .fullscreen:before
 {
-    content: url(/public/photos/fullscreen.png);
+    content: url(/photos/fullscreen.png);
 }
 .buttons .fullscreen
 {

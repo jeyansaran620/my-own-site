@@ -75,7 +75,7 @@ render(){
           <div className="row row-header">
               <div className="col-12 col-md-8">
                   <h2>Jeyan K</h2>
-                  <p>An Enthusiastic Learner who want to explore in all the aspects of updating his knowledge and experience to the very next level, having the only goal of "Not being the same as Yesterday".</p>
+                  <p>An Enthusiastic Learner who is want to explore in all the aspects of updating his knowledge and experience to the very next level, Currently working towards Full stack (MERN) Development.</p>
               </div>
           </div>
       </div>

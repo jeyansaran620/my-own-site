@@ -3,6 +3,8 @@ import XoGame from './XoGame';
 import SnakeLadder from './SnakeLadder';
 import Puzzle from './Puzzle.js';
 import Dragon from './Dragon';
+import Linker from './linker';
+
 import { Collapse, CardBody, Card, CardHeader } from 'reactstrap';
 
 class Interact extends React.Component {
@@ -19,6 +21,7 @@ class Interact extends React.Component {
 
         const {collapse} = this.state;
         return (
+          <div>
           <div className="container">
               <h3 className="page-header">My - Miniature React Games</h3>
               <Card style={{ marginBottom: '1rem' }} className="box">
@@ -45,6 +48,9 @@ class Interact extends React.Component {
               <CardBody><Puzzle/></CardBody>
               </Collapse> 
               </Card>
+          </div>
+
+          <Linker page={3} />
           </div>
         );
  }

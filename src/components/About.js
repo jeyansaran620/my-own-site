@@ -1,8 +1,25 @@
 import React from 'react';
+import Games from './Games';
+import Linker from './linker';
+
 import '../css/About.css';
+
 const About =() => {
   return (
     <div> 
+    <div className="heading">
+    About the site
+    </div>
+    <br/>
+    <div className="container">
+    <div className="row row-content align-items-center">
+            <div  className="col m-2">
+            <h2>The Build</h2>
+            <p>A simple example of React which covers multiple of aspects of myself related to the technical side as well as the extra curricular side of me. This Site is Build with React router to switch in-between the pages here. Embedded Reactstrap makes the site Responsive and lively, Also include my own Video player in the promotional page, where i showcased my stuff with designs.</p>
+            </div>
+    </div>
+           <Games  className="row"/>
+    </div>
     <div className="heading">
     LinkedIn
     </div>
@@ -71,6 +88,8 @@ const About =() => {
      மெய்வருத்த கூலி தரும்</div>
      </div>
      <br/>
+     
+    <Linker page={1} />
      </div>
   )
 }

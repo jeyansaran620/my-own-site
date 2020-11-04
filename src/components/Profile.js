@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Linker from './linker';
 
 const Profile =() => {
 
@@ -28,36 +30,16 @@ const Profile =() => {
         mark:"CGPA-7.65*"
     },
   ]
-  const Potency =[
-      {
-          value:"Punctual",
-          link:"https://en.wikipedia.org/wiki/Punctuality"
-      },
-       {
-        value:"Determined",
-        link:"https://en.wikipedia.org/wiki/Determination"
-    },
-     {
-        value:"Optimal",
-        link:"https://en.wikipedia.org/wiki/Optimist"
-    },
-    {
-        value:"Creative",
-        link:"https://en.wikipedia.org/wiki/Creativity"
-    },
-  ]
+  
 const Techies =[
     {
-        value:"C, Java"
+        value:"C, Java, Python"
     },
     {
-        value:"HTML, CSS"
+        value:"React JS, Express JS, Redux"
     },
     {
-        value:"React JS"
-    },
-    {
-        value:"Mysql"
+        value:"Mysql, Mongo DB"
     }
 ]
 const Parts =[
@@ -69,6 +51,9 @@ const Parts =[
     },
     {
         value:"Mini-Hackathon Conducted by College of Engineering, Guindy"
+    },
+    {
+        value:"3 days Hackathon Conducted by Kumaraguru College of Technology, Coimbatore"
     }
 ]
 const AI =[
@@ -76,40 +61,42 @@ const AI =[
         value:"Data Structures"
     },
     {
-        value:"Web Designing"
+        value:"Object Oriented Programming"
     },
     {
-        value:"RDBMS Mysql"
+        value:"Full Stack Web Designing"
+    },
+    {
+        value:"Database Management"
     }
 ]
 
 const Achieve =[
     {
-        value:"Secured First Place in EX-MATERIA, Geekscoop-X9"
+        value:"Secured 'First Place' in EX-MATERIA, Geekscoop-X9"
     },
     {
-        value:"Grabbed Second Place in Paper Expo, Geekscoop-X9"
+        value:"Grabbed 'Second Place' in Paper Expo, Geekscoop-X9"
     },
     {
-        value:"Placced First Place in Promo Video, Geekscoop-X9"
+        value:"Placed 'First Place' in Promo Video, Geekscoop-X9"
+    },
+    {
+        value:"Recorded the 'Best Idea' of the Hackathon, KCT Tamil Mandram"
     }
 ]
 const Projects =[
-    {
-        title:"Mini Project",
-        value:"Intrusion Detection System over Network with the help of Random Forest Method Implementation."
-    },
+    
     {
         title:"Internship Project",
         value:"Educational website to store and share knowledge among the Authorized users of the site with the help of ReactJS, AngularJS, MongoDB and AWS."
-    }
+    },
+    {
+        title:"Hobby Games",
+        value:"Pure JavaScript single player Games which are build over react where i proved my javascript skillset and innovative thinking.",
+        link:"Interact"
+    },
 ]
-
-   const Objectives =() => {
-    return (
-    <p className="col-11 text-align-center">
-    Looking forward to work in a Dynamic and challenging environment with a putative organization to utilize my creativity and innovative thinking for the benefit of the organization and myself.  
-    </p> ) }
 
     const EduField =() => 
     {
@@ -117,7 +104,7 @@ const Projects =[
             {
     eduFields.map((edu, i) => {
       return(
-          <div key={i} className="row mb-3 mb-sm-2">
+          <div key={i} className="row mb-2 mt-2 mb-sm-2">
             <div className="col-4 col-sm-2">
             {edu.qual}
             </div>
@@ -137,24 +124,7 @@ const Projects =[
     </div>
     )
     }
-        
-    const Potencies =() => 
-    {
-        return ( <div>
-            {
-    Potency.map((pot, i) => {
-      return(
-          <div key={i} >
-          <div className="pl-4 pb-2">    
-          <a href={pot.link}>{pot.value}</a>
-          </div>
-          </div>
-      )
-    })
-    }
-    </div>
-    )
-    }
+   
     const Technical =() => 
     {
         return ( <div>
@@ -162,7 +132,7 @@ const Projects =[
     Techies.map((tech, i) => {
       return(
           <div key={i} >
-           <div className="pl-4 pb-2"> {tech.value}
+           <div className="pb-2"> {tech.value}
           </div>
           </div>
       )
@@ -178,7 +148,7 @@ const Projects =[
     Parts.map((part, i) => {
       return(
           <div key={i} >
-         <div className="pl-4 pb-2 pr-2">      
+         <div className="pb-3 pt-2">      
           {part.value}
           </div>
           </div>
@@ -195,7 +165,7 @@ const Projects =[
     AI.map((a, i) => {
       return(
           <div key={i} >
-          <div className="pl-4 pb-3">     
+          <div className="pb-3">     
           {a.value}
           </div>
           </div>
@@ -212,7 +182,7 @@ const Projects =[
     Achieve.map((ac, i) => {
       return(
           <div key={i} >
-          <div className="pl-4 pb-3 pt-3">
+          <div className="pb-3 pt-3">
           {ac.value}
           </div>
           </div>
@@ -229,10 +199,13 @@ const Projects =[
     Projects.map((pro, i) => {
       return(
           <div key={i} >
-           <div className="pl-4 pb-3">
-         <div className="h6 pl-2">{pro.title}</div>
+           <div className="pb-2">
+         <div className="h6 ">{pro.title}</div>
           <div >
           {pro.value}
+          <div className="h5 p-2">
+          {pro.link ? <Link to={`/${pro.link}`}>Live Link</Link> : null}
+          </div>
           </div>
           </div>
           </div>
@@ -242,26 +215,41 @@ const Projects =[
     </div>
     )
     }
+
+    const MaayaKannadi =() => 
+    {
+        return ( 
+           <div className="pb-3">
+         <div className="h6 pt-3 pb-3">
+             A Live Prototype Website Model Build using Express JS in which people can send queries with photographs of Plants/Trees and get more information about them regarding the Tamil Literature References about them.  
+         </div>
+         <div  className="h6 pb-3"><a href="http://maayakannadi.herokuapp.com/" >Link to Live Website</a></div>
+         <div  className="h6 pb-3"><a href="https://github.com/jeyansaran620/Magic_lens" >Link to Git Repository</a></div>
+          </div>
+    )
+    }
+
+    const SparrowShot =() => 
+    {
+        return ( 
+           <div className= "pb-3">
+         <div className="h6 pt-3 pb-3">
+             A Live Website Build using React Js and Express JS in which people can send queries with URL and get screenshots of those websites, They can also configure the Quality and format of the screenshot from the the frontend.  
+         </div>
+          <div  className="h6 pb-3"><a href="https://sparrow-shot.netlify.app/" >Link to Live Website</a></div>
+          <div  className="h6 pb-3"><a href="https://github.com/jeyansaran620/Sparrow_shot" >Link to Git Repository</a></div>
+          </div>
+    )
+    }
+
     const List = [
-        {
-            title:"Objective",
-            content:Objectives()
-        },
         {
             title:"Educational Qualifications",
             content:EduField()
         },
         {
-            title:"Personal Potency",
-            content:Potencies()
-        },
-        {
             title:"Technical Skills",
             content:Technical()
-        },
-        {
-            title:"Participatons",
-            content:Participatons()
         },
         {
             title:"Area Of Interest",
@@ -272,8 +260,20 @@ const Projects =[
             content:Achieved()
         },
         {
+            title:"Participatons",
+            content:Participatons()
+        },
+        {
             title:"Projects",
             content:Project()
+        },
+        {
+            title:"Maaya Kannadi",
+            content:MaayaKannadi()
+        },
+        {
+            title:"Sparrow Shot",
+            content:SparrowShot()
         }
     ]
 const GiveList = () => 
@@ -281,8 +281,8 @@ const GiveList = () =>
     return ( 
 List.map((li, i) => {
   return(
-    <div key={i} className="col-12 col-sm-6 border rounded box mt-sm-0 mt-sm-1 mb-sm-0 mb-sm-1">
-    <div className="font-weight-bold m-2 pl-2 border-bottom pb-2"> 
+    <div key={i} className="col-12 col-sm-6 border text-center rounded box mt-sm-0 mt-sm-1 mb-sm-0 mb-sm-1">
+    <div className="font-weight-bold m-2 border-bottom pb-2"> 
       {li.title}
     </div>
      {li.content}
@@ -293,10 +293,14 @@ List.map((li, i) => {
 }
 
   return (
+    <div>
     <div className="container">
     <div  className="row row-content"> 
       {GiveList()}
     </div>
+    </div>
+    
+    <Linker page={0} />
     </div>
   )
 }
