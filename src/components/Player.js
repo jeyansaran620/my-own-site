@@ -1,18 +1,16 @@
 import React,{Component} from 'react';
-import './Player.css';
+import '../css/Player.css';
 
 class Player extends Component{
-  constructor(props)
-  {
-    super(props);
-    this.state = {
+  
+  state = {
       play:"play",
       volume:"unmute",
       orangeWidth:0,
       currentTime:0,
       videoDuration:0
     }
-  }
+    
   onVolumeChange = () => 
  {  
    if(this.state.volume==="unmute")

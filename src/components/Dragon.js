@@ -1,5 +1,5 @@
 import React from 'react';
-import './dragon.css';
+import '../css/dragon.css';
 
 class Dragon extends React.Component
 {
@@ -159,11 +159,11 @@ class Dragon extends React.Component
         return(
             <div className='dragon-overlay'>
                 <div className='outer-box'>
-                    <img className='smalley' src={require('./astroid.png')} alt={'astroid'} style={{left:`${Lvalue1}rem`,top:`${Tvalue1}rem`}}></img>
-                    <img className='smalley' src={require('./astroid.png')} alt={'astroid'} style={{left:`${Lvalue2}rem`,top:`${Tvalue2}rem`}}></img>
-                    <img className='smalley' src={require('./astroid.png')} alt={'astroid'} style={{left:`${Lvalue3}rem`,top:`${Tvalue3}rem`}}></img>
-                    <img className='smalley' src={require('./astroid.png')} alt={'astroid'} style={{left:`${Lvalue4}rem`,top:`${Tvalue4}rem`}}></img>
-                    <img className='dra-player' src={require('./spaceship.png')} alt={'astroid'} style={{left:`${Lplayer}rem`,top:`${Tplayer}rem`}}></img>
+                    <img className='smalley' src="./photos/astroid.png" alt={'astroid'} style={{left:`${Lvalue1}rem`,top:`${Tvalue1}rem`}}></img>
+                    <img className='smalley' src="./photos/astroid.png" alt={'astroid'} style={{left:`${Lvalue2}rem`,top:`${Tvalue2}rem`}}></img>
+                    <img className='smalley' src="./photos/astroid.png" alt={'astroid'} style={{left:`${Lvalue3}rem`,top:`${Tvalue3}rem`}}></img>
+                    <img className='smalley' src="./photos/astroid.png" alt={'astroid'} style={{left:`${Lvalue4}rem`,top:`${Tvalue4}rem`}}></img>
+                    <img className='dra-player' src="./photos/spaceship.png" alt={'astroid'} style={{left:`${Lplayer}rem`,top:`${Tplayer}rem`}}></img>
                 </div>
                 {this.state.Lost?
                 <div>

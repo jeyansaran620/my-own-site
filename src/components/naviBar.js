@@ -5,15 +5,13 @@ import { withRouter } from "react-router-dom";
 import { NavLink } from 'react-router-dom';
 
 class NavigBar extends React.Component{
-  constructor(props)
-  {
-    super(props);
-    this.toggleNav = this.toggleNav.bind(this);
+  
+    toggleNav = this.toggleNav.bind(this);
    
-    this.state = {
+    state = {
       isNavOpen: false,
     };
-  }
+
 
   toggleNav() {
     this.setState({

@@ -1,10 +1,8 @@
 import React,{Component} from 'react';
-import './XoGame.css';
+import '../css/XoGame.css';
 class XoGame extends Component{
-  constructor(props)
-  {
-    super(props);
-    this.state = {
+  
+    state = {
       now:"X",
       won:"no", 
       count:1,
@@ -12,8 +10,7 @@ class XoGame extends Component{
       BoxO :[],
       Boxes :[1,2,3,4,5,6,7,8,9]
     }
-  }
- 
+  
  resetAll = () => 
  {
      this.setState({

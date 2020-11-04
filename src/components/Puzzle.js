@@ -1,14 +1,11 @@
 import React,{Component} from 'react';
-import './Puzzle.css';
+import '../css/Puzzle.css';
+
 class Puzzle extends Component{
-  constructor(props)
-  {
-    super(props);
-    this.state = {
+ state = {
         Won:false,
       boxes :[]
     }
-  }
 
 ChangeBox=(i) =>
 { 
@@ -104,7 +101,7 @@ ChangeBox=(i) =>
                  return(
                      <div key={i}>
                      {box.value===21 ? <div  className="Puzzle-box" style={{left:`${Lvalue}rem`,top:`${Bvalue}rem`}}></div>
-                    : <div key={i} className="Puzzle-box" style={{left:`${Lvalue}rem`,top:`${Bvalue}rem`,backgroundImage: 'url(' + require(`./Puzzle/${box.value}.jpg`) + ')',backgroundSize:'4rem'}}></div>
+                    : <div key={i} className="Puzzle-box" style={{left:`${Lvalue}rem`,top:`${Bvalue}rem`,backgroundImage: `url(/photos/Puzzle/${box.value}.jpg)`,backgroundSize:'4rem'}}></div>
                 }</div>
                     )
                })
@@ -120,7 +117,7 @@ ChangeBox=(i) =>
                  return(
                      <div key={i}>
                      {box.value===21 ? <div  className="Puzzle-box" style={{left:`${Lvalue}rem`,top:`${Bvalue}rem`}}></div>
-                    : <div key={i} className="Puzzle-box" style={{left:`${Lvalue}rem`,top:`${Bvalue}rem`,backgroundImage: 'url(' + require(`./Puzzle/${box.value}.jpg`) + ')',backgroundSize:'4rem'}} onClick={()=>this.ChangeBox(i)}></div>
+                    : <div key={i} className="Puzzle-box" style={{left:`${Lvalue}rem`,top:`${Bvalue}rem`,backgroundImage:`url(/photos/Puzzle/${box.value}.jpg)`,backgroundSize:'4rem'}} onClick={()=>this.ChangeBox(i)}></div>
                 }</div>
                     )
                })

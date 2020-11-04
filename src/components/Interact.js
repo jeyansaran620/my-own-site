@@ -1,17 +1,15 @@
 import React from 'react';
 import XoGame from './XoGame';
 import SnakeLadder from './SnakeLadder';
-import Puzzle from './Puzzle';
+import Puzzle from './Puzzle.js';
 import Dragon from './Dragon';
 import { Collapse, CardBody, Card, CardHeader } from 'reactstrap';
 
 class Interact extends React.Component {
         
-    constructor(props) {
-        super(props);
-        this.toggle = this.toggle.bind(this);
-        this.state = { collapse: 0 };
-      }
+    toggle = this.toggle.bind(this);
+    state = { collapse: 0 };
+    
       toggle(e) {
         let event = e.target.dataset.event;
         this.setState({ collapse: this.state.collapse === Number(event) ? 0 : Number(event) });

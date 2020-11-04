@@ -11,7 +11,7 @@
 }
 .SL-Box
 {
-    background: url('./SnakeLadder.jpg');
+    background: url(/photos/SnakeLadder.jpg);
     background-size: 20rem;
     background-repeat: no-repeat;
     width: 20rem;
@@ -21,7 +21,7 @@
 }
 .SL-player
 {
-    background: url('./player.png');
+    background: url(/photos/player.png);
     background-size: 1.6rem;
     background-repeat: no-repeat;
     width: 1.6rem;
@@ -86,33 +86,33 @@
 }
 .Dice1
 {
-    background-image: url(./Dice1.png);
+    background-image: url(/photos/Dice1.png);
     background-size: 3rem;
 }
 
 .Dice2
 {
-    background-image: url(./Dice2.png);
+    background-image: url(/photos/Dice2.png);
     background-size: 3rem;
 }
 .Dice3
 {
-    background-image: url(./Dice3.png);
+    background-image: url(/photos/Dice3.png);
     background-size: 3rem;
 }
 .Dice4
 {
-    background-image: url(./Dice4.png);
+    background-image: url(/photos/Dice4.png);
     background-size: 3rem;
 }
 .Dice5
 {
-    background-image: url(./Dice5.png);
+    background-image: url(/photos/Dice5.png);
     background-size: 3rem;
 }
 .Dice6
 {
-    background-image: url(./Dice6.png);
+    background-image: url(/photos/Dice6.png);
     background-size: 3rem;
 }
 

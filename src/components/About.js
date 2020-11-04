@@ -1,5 +1,5 @@
 import React from 'react';
-import './About.css';
+import '../css/About.css';
 const About =() => {
   return (
     <div> 
@@ -9,8 +9,8 @@ const About =() => {
     <br/>
     <div className="master-piece">
     <div className="linkedin-trail">
-     <img src={require('./linkedin.jpg')} alt="linkedin-backdrop" />
-     <img className="profile-pic" src={require('./profile_pic.jpg')} alt="linkedin-profile" />
+     <img src="./photos/linkedin.jpg" alt="linkedin-backdrop" />
+     <img className="profile-pic" src="./photos/profile_pic.jpg" alt="linkedin-profile" />
      <div className="profile-desc"><div className="profile-name">jeyan k <br/></div>Indian | Learner | Front End Developer | Creator
      <div>Coimbatore, Tamil Nadu, India</div></div>
      <div className="college-name">Government College of Technology, Coimbatore
@@ -28,9 +28,9 @@ const About =() => {
     <br/>
     <div className="github">
     <div className="github-trail">
-    <img className="github-logo" src={require('./github.png')} alt="github-logo"/>
+    <img className="github-logo" src="./photos/github.png" alt="github-logo"/>
     <div className="gh-uname"><a href="https://www.github.com/jeyansaran620">jeyansaran620</a></div>
-    <img className="gh-status" src={require('./github-status.png')} alt="github-status"/>
+    <img className="gh-status" src="./photos/github-status.png" alt="github-status"/>
     </div>
     <div className="repos">Popular repositories</div>
     <div className="repo-box">
@@ -55,9 +55,9 @@ const About =() => {
      </div>
      <br/>
      <div className="insta-trail">
-     <img className="insta-logo" src={require('./instagram.png')} alt="insta-logo"/>
-     <img className="insta-name" src={require('./insta-name.png')} alt="insta-name"/>
-     <img className="insta-profile" src={require('./insta-profile.jpg')} alt="insta-profile"/>
+     <img className="insta-logo" src="./photos/instagram.png" alt="insta-logo"/>
+     <img className="insta-name" src="./photos/insta-name.png" alt="insta-name"/>
+     <img className="insta-profile" src="./photos/insta-profile.jpg" alt="insta-profile"/>
      <div className="insta-button-con">
      <div className="insta-button"><a href="https://instagram.com/itz_my_beta_version">Follow</a></div>
      </div>

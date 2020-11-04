@@ -1,16 +1,14 @@
 import React,{Component} from 'react';
-import './SnakeLadder.css';
+import '../css/SnakeLadder.css';
 class SnakeLadder extends Component{
-  constructor(props)
-  {
-    super(props);
-    this.state = {
+    
+  state = {
       currentPosition:0,
       started:false,
       msg:"Get 1 to start",
       DiceRoll:'Dice-inner Dice6'
     }
-  }
+  
 
    dice='Dice-inner Dice';
    DiceRot='Dice ';

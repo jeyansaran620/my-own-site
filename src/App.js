@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
-import NavigBar from './naviBar/naviBar';
-import Footer from './Footer/Footer';
-import PlayerList from './Player/playerList';
-import Interact from './Interact/Interact';
-import About from './About/About';
-import Profile from './Profile/Profile';
+import NavigBar from './components/naviBar';
+import Footer from './components/Footer';
+import Linker from './components/linker';
+import PlayerList from './components/playerList';
+import Interact from './components/Interact';
+import About from './components/About';
+import Profile from './components/Profile';
 import { 
   Route,
   Switch ,
@@ -23,6 +24,7 @@ const App = () => {
           <Route  path="/Promotions" component={PlayerList} />
           <Redirect to="/Home"/>
     </Switch >
+    <Linker page={1} />
     <Footer  />
     </div>
   )

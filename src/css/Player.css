@@ -52,32 +52,32 @@
 
 .buttons #mute:before
 {
-    content: url("mute.png");
+    content: url(/public/photos/mute.png);
 }
 .buttons #mute.unmute:before
 {
-    content: url("mute.png");
+    content: url(/public/photos/mute.png);
 }
 .buttons #mute.mute:before
 {
-    content: url("unmute.png");
+    content: url(/public/photos/unmute.png);
 }
 .buttons #play:before
 {
-    content: url("play.png");
+    content: url(/public/photos/play.png);
 }
 .buttons #play.play:before
 {
-    content: url("play.png");
+    content: url(/public/photos/play.png);
 }
 .buttons #play.pause:before
 {
-    content: url("pause.png");
+    content: url(/public/photos/pause.png);
 }
 
 .buttons .fullscreen:before
 {
-    content: url("fullscreen.png");
+    content: url(/public/photos/fullscreen.png);
 }
 .buttons .fullscreen
 {
