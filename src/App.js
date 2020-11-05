@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import NavigBar from './components/naviBar';
+import NavigBar from './components/NaviBar';
 import Footer from './components/Footer';
 import PlayerList from './components/playerList';
 import Interact from './components/Interact';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Linker from './linker';
+import Linker from './Linker';
 import {eduFields, Techies,
     Parts, AI, Achieve, Projects} from './ProfileData';
 

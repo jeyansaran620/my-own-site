@@ -1,6 +1,6 @@
 import React from 'react';
 import Games from './Games';
-import Linker from './linker';
+import Linker from './Linker';
 
 import '../css/About.css';
 

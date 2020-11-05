@@ -3,7 +3,7 @@ import XoGame from './XoGame';
 import SnakeLadder from './SnakeLadder';
 import Puzzle from './Puzzle.js';
 import Dragon from './Dragon';
-import Linker from './linker';
+import Linker from './Linker';
 
 import { Collapse, CardBody, Card, CardHeader } from 'reactstrap';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import Player from './Player';
-import Linker from './linker';
+import Linker from './Linker';
 
 import { Card,  CardText, CardBody, 
     CardTitle, CardImg } from 'reactstrap';
