@@ -14,55 +14,55 @@ class Player extends Component{
             currentTime:0,
             videoDuration:0
         };
-    }
   
-    onVolumeChange() 
-    {  
-        if(this.state.volume==="unmute")
-        {
-            this.setState({volume:"mute"});
-            this.player.muted=true;
-        }
-        else
-        {
-            this.setState({volume:"unmute"});
-            this.player.muted=false;
-        }
-    }
+        this.onVolumeChange = () =>
+        {  
+            if(this.state.volume==="unmute")
+            {
+                this.setState({volume:"mute"});
+                this.player.muted=true;
+            }
+            else
+            {
+                this.setState({volume:"unmute"});
+                this.player.muted=false;
+            }
+        };
 
-    onPlayChange()  
-    {  
-        if(this.state.play==="play")
-        {
-            this.setState({play:"pause",videoDuration:this.player.duration});
-            this.player.play();
-        }
-        else
-        {
-            this.setState({play:"play"});
-            this.player.pause();
-        }
-    }
+        this.onPlayChange = () => 
+        {  
+            if(this.state.play==="play")
+            {
+                this.setState({play:"pause",videoDuration:this.player.duration});
+                this.player.play();
+            }
+            else
+            {
+                this.setState({play:"play"});
+                this.player.pause();
+            }
+        };
  
-    onFullScreen()
-    {
-        this.player.requestFullscreen();
-    }
+        this.onFullScreen = () =>
+        {
+            this.player.requestFullscreen();
+        };
  
-    onTimeChange()
-    {
-        let value=(this.player.currentTime/this.player.duration)*100;
-        this.setState({orangeWidth:value,currentTime:Math.floor(this.player.currentTime)});
+        this.onTimeChange = () =>
+        {
+            let value=(this.player.currentTime/this.player.duration)*100;
+            this.setState({orangeWidth:value,currentTime:Math.floor(this.player.currentTime)});
         
-        if(this.player.ended)
-        {
-            this.setState({play:"play"});
-        }
-    }
+            if(this.player.ended)
+            {
+                this.setState({play:"play"});
+            }
+        };
   
-    getTimeChange(event)
-    {
-        this.player.currentTime=this.player.duration*((event.pageX-this.player.getBoundingClientRect().left)/this.player.getBoundingClientRect().width);
+        this.getTimeChange = (event) =>
+        {
+            this.player.currentTime=this.player.duration*((event.pageX-this.player.getBoundingClientRect().left)/this.player.getBoundingClientRect().width);
+        };
     }
 
     render()
