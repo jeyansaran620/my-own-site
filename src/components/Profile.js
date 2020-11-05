@@ -145,7 +145,7 @@ const Profile =() => {
         return ( 
             <div className= "pb-3">
                 <div className="h6 pt-3 pb-3">
-                    A Live Website Build using React Js and Express JS in which people can send queries with URL and get screenshots of those websites, They can also configure the Quality and format of the screenshot from the the frontend.  
+                    A Live Website Build using React Js and Express JS in which people can send queries with URL and get screenshots of those websites, They can also configure the Quality and format of the screenshot from the frontend.  
                 </div>
                 <div  className="h6 pb-3"><a href="https://sparrow-shot.netlify.app/" >Link to Live Website</a></div>
                 <div  className="h6 pb-3"><a href="https://github.com/jeyansaran620/Sparrow_shot" >Link to Git Repository</a></div>

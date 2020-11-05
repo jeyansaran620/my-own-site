@@ -85,7 +85,7 @@ export const Achieve =[
 export const Projects =[
     {
         title:"Internship Project",
-        value:"Educational website to store and share knowledge among the Authorized users of the site with the help of ReactJS, AngularJS, MongoDB and AWS."
+        value:"Educational website to store and share knowledge among the Authorized users of the site with the help of ReactJS, MongoDB and AWS."
     },
     {
         title:"Hobby Games",
