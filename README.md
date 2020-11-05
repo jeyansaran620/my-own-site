@@ -1,11 +1,11 @@
-## version 3.0: 
+## version 3.0: [go to commit](https://github.com/jeyansaran620/my-own-site/tree/2186f008c4e95cc45131125b4aa31e6250ce3140)
     Changed the structure of file with Components.
     Added Eslint to make the code cleaner. 
     Updated the content of the Profile.
     Added Linker to connect all pages.
     Included the details about the site and the Games.
 
-## version 2.0: [go to commit](https://github.com/jeyansaran620/my-own-site/commit/4b92c95e331238a92b7ce226f8d77eb5af616564)
+## version 2.0: [go to commit](https://github.com/jeyansaran620/my-own-site/tree/4b92c95e331238a92b7ce226f8d77eb5af616564)
     Updated the site with Bootstrap and used a color scheme.
     Added Watchout to games.
     Changed the look and feel with animations.
