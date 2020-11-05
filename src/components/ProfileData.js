@@ -21,7 +21,7 @@ export const eduFields=[
         link:"http://www.gct.ac.in/",
         area:"Coimbatore",
         year:"2021",
-        mark:"CGPA-7.65*"
+        mark:"CGPA-7.91*"
     },
 ];
 
