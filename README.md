@@ -1,4 +1,4 @@
-## version 3.0: [go to commit](https://github.com/jeyansaran620/my-own-site/tree/2186f008c4e95cc45131125b4aa31e6250ce3140)
+## version 3.0: [go to commit](https://github.com/jeyansaran620/my-own-site/tree/8158763db98425ee1327bf1a234480bea674ec1d)
     Changed the structure of file with Components.
     Added Eslint to make the code cleaner. 
     Updated the content of the Profile.
