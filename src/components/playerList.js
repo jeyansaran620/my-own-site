@@ -2,9 +2,8 @@ import React from 'react';
 import Player from './Player';
 import Linker from './linker';
 
-import {
-    Card,  CardText, CardBody, CardTitle, CardImg
-  } from 'reactstrap';
+import { Card,  CardText, CardBody, 
+    CardTitle, CardImg } from 'reactstrap';
 
 const PlayerList = () => {
     let VideoList=[
@@ -86,44 +85,48 @@ const PlayerList = () => {
             src:'https://raw.githubusercontent.com/jeyansaran620/My-Promotions/master/vote without ink.mp4',
             content:"video"
         }
-    ]
+    ];
+
     const shuffle =arr => arr
-.map(a => [Math.random(), a])
-.sort((a, b) => a[0] - b[0])
-.map(a => a[1]);
+        .map(a => [Math.random(), a])
+        .sort((a, b) => a[0] - b[0])
+        .map(a => a[1]);
   
-   const RenderList = (Videos) =>
-   {
-       return (
-    <div className="row row-content justify-content-center">
+    const RenderList = (Videos) =>
     {
-        Videos.map((student, i) => {
-return(
-    <Card key={i} className="col-12 col-sm-6 box mt-sm-0 mt-sm-1 mb-sm-0 mb-sm-1">
-    <CardBody>
-      <CardTitle className="text-center"><strong>{student.name}</strong></CardTitle>
-    </CardBody>
-    {student.content==="video"?
-    <Player src={student.src}/>:
-    <CardImg src={student.src} alt={student.name} />}
-    <CardBody>
-      <CardText className="p-3">{student.desc}</CardText>
-    </CardBody>
-  </Card>
-)
-})
-} 
-</div>
-       );
-    
-   }
-     return( 
-    <div>
-     <div className="container">
-      {RenderList(shuffle(VideoList))}
-      </div>
-      <Linker page={2}/>
-      </div>
-);
-}
+        return (
+            <div className="row row-content justify-content-center">
+                {
+                    Videos.map((student, i) => {
+                        return(
+                            <Card key={i} className="col-12 col-sm-6 box mt-sm-0 mt-sm-1 mb-sm-0 mb-sm-1">
+                                <CardBody>
+                                    <CardTitle className="text-center"><strong>{student.name}</strong></CardTitle>
+                                </CardBody>
+                                {student.content==="video"?
+                                    <Player src={student.src}/>:
+                                    <CardImg src={student.src} alt={student.name} />
+                                }
+                                <CardBody>
+                                    <CardText className="p-3">{student.desc}</CardText>
+                                </CardBody>
+                            </Card>
+                        );
+                    })
+                } 
+            </div>
+        ); 
+    };
+
+
+    return( 
+        <div>
+            <div className="container">
+                {RenderList(shuffle(VideoList))}
+            </div>
+            <Linker page={2}/>
+        </div>
+    );
+};
+
 export default PlayerList;
