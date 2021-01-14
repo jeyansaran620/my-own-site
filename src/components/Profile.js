@@ -153,19 +153,6 @@ const Profile =() => {
         );
     };
 
-    const ToolTracker =() => 
-    {
-        return ( 
-            <div className= "pb-3">
-                <div className="h6 pt-3 pb-3">
-                    A Live Website Build using React Js and Express JS in which the company can track their tools, clients and history of their rents. site is also provided with the backend authorisation with sessions.  
-                </div>
-                <div  className="h6 pb-3"><a href="https://tool-track.herokuapp.com/" >Link to Live Website</a></div>
-                <div  className="h6 pb-3"><a href="https://github.com/jeyansaran620/Tracker" >Link to Git Repository</a></div>
-            </div>
-        );
-    };
-
     const List = [
         {
             title:"Educational Qualifications",
@@ -198,10 +185,6 @@ const Profile =() => {
         {
             title:"Sparrow Shot",
             content:SparrowShot()
-        },
-        {
-            title:"Tool Tracker",
-            content:ToolTracker()
         }
     ];
 
