@@ -63,13 +63,13 @@ const About =() => {
                         <div className="repo-name"><a href="https://github.com/jeyansaran620/Magic_lens">Magic_lens</a></div>
                     </div>
                     <div className="repo">
-                        <div className="repo-name"><a href="https://github.com/jeyansaran620/Redux_with_React">Redux_with_React</a></div>
-                    </div>
-                    <div className="repo">
                         <div className="repo-name"><a href="https://github.com/jeyansaran620/Practise_DSA">Practise_DSA</a></div>
                     </div>
                     <div className="repo">
-                        <div className="repo-name"><a href="https://github.com/jeyansaran620/My-Promotions">My-Promotions</a></div>
+                        <div className="repo-name"><a href="https://github.com/jeyansaran620/Tracker">Tracker</a></div>
+                    </div>
+                    <div className="repo">
+                        <div className="repo-name"><a href="https://github.com/jeyansaran620/Redux_with_React">Redux_with_React</a></div>
                     </div>
                 </div>
             </div>

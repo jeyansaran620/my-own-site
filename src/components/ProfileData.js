@@ -21,7 +21,7 @@ export const eduFields=[
         link:"http://www.gct.ac.in/",
         area:"Coimbatore",
         year:"2021",
-        mark:"CGPA-7.91*"
+        mark:"CGPA-7.93*"
     },
 ];
 
@@ -80,16 +80,4 @@ export const Achieve =[
     {
         value:"Recorded the 'Best Idea' of the Hackathon, KCT Tamil Mandram"
     }
-];
-
-export const Projects =[
-    {
-        title:"Internship Project",
-        value:"Educational website to store and share knowledge among the Authorized users of the site with the help of ReactJS, MongoDB and AWS."
-    },
-    {
-        title:"Hobby Games",
-        value:"Pure JavaScript single player Games which are build over react where i proved my javascript skillset and innovative thinking.",
-        link:"Interact"
-    },
 ];

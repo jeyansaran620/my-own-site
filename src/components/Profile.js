@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Linker from './Linker';
 import {eduFields, Techies,
-    Parts, AI, Achieve, Projects} from './ProfileData';
+    Parts, AI, Achieve} from './ProfileData';
 
 const Profile =() => {
 
@@ -104,25 +104,30 @@ const Profile =() => {
 
     const Project =() => 
     {
+        return (
+            <div className="pb-2">
+                <div className="h5">Internship Project</div>
+                <div className="h6 pt-3 pb-3" >
+                  Educational website to store and share knowledge among the Authorized users of the site assisted with admin access. Site made with the stack of:
+                </div>
+                <div className="h6 pb-2">React Js </div>
+                <div className="h6 pb-2">Express JS </div>
+                <div className="h6 pb-2">Mongo DB </div>
+                <div className="h6 pb-2">AWS </div>
+            </div>
+        );
+    };
+
+    const HobbyGames =() => 
+    {
         return ( 
-            <div>
-                {
-                    Projects.map((pro, i) => {
-                        return(
-                            <div key={i} >
-                                <div className="pb-2">
-                                    <div className="h6 ">{pro.title}</div>
-                                    <div >
-                                        {pro.value}
-                                        <div className="h5 p-2">
-                                            {pro.link ? <Link to={`/${pro.link}`}>Live Link</Link> : null}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        );        
-                    })
-                }
+            <div className="pb-3">
+                <div className="h6 pt-3 pb-3">
+                Pure JavaScript single player Games which are built over react where i proved my javascript skillset and innovative thinking.
+                </div>
+                <img className="screen-shot p-2 m-1" src="./photos/games.jpg" alt="games-screenshot" />
+                <div className="h6 p-2"><Link to={`/Interact`}>Live Link</Link>
+                </div>
             </div>
         );
     };
@@ -134,8 +139,9 @@ const Profile =() => {
                 <div className="h6 pt-3 pb-3">
                     A Live Prototype Website Model Build using Express JS in which people can send queries with photographs of Plants/Trees and get more information about them regarding the Tamil Literature References about them.  
                 </div>
-                <div  className="h6 pb-3"><a href="http://maayakannadi.herokuapp.com/" >Link to Live Website</a></div>
-                <div  className="h6 pb-3"><a href="https://github.com/jeyansaran620/Magic_lens" >Link to Git Repository</a></div>
+                <img className="screen-shot p-2 m-1" src="./photos/mirror.jpg" alt="mirror-screenshot" />
+                <div  className="h6 p-2 pt-4"><a href="http://maayakannadi.herokuapp.com/" >Link to Live Website</a></div>
+                <div  className="h6 p-2"><a href="https://github.com/jeyansaran620/Magic_lens" >Link to Git Repository</a></div>
             </div>
         );
     };
@@ -147,8 +153,9 @@ const Profile =() => {
                 <div className="h6 pt-3 pb-3">
                     A Live Website Build using React Js and Express JS in which people can send queries with URL and get screenshots of those websites, They can also configure the Quality and format of the screenshot from the frontend.  
                 </div>
-                <div  className="h6 pb-3"><a href="https://sparrow-shot.netlify.app/" >Link to Live Website</a></div>
-                <div  className="h6 pb-3"><a href="https://github.com/jeyansaran620/Sparrow_shot" >Link to Git Repository</a></div>
+                <img className="screen-shot p-2 m-1" src="./photos/sparrow.jpg" alt="sparrow-screenshot" />
+                <div  className="h6 p-2 pt-4"><a href="https://sparrow-shot.netlify.app/" >Link to Live Website</a></div>
+                <div  className="h6 p-2"><a href="https://github.com/jeyansaran620/Sparrow_shot" >Link to Git Repository</a></div>
             </div>
         );
     };
@@ -160,8 +167,9 @@ const Profile =() => {
                 <div className="h6 pt-3 pb-3">
                     A Live Website Build using React Js and Express JS in which the company can track their tools, clients and history of their rents. site is also provided with the backend authorisation with sessions.  
                 </div>
-                <div  className="h6 pb-3"><a href="https://tool-track.herokuapp.com/" >Link to Live Website</a></div>
-                <div  className="h6 pb-3"><a href="https://github.com/jeyansaran620/Tracker" >Link to Git Repository</a></div>
+                <img className="screen-shot p-2 m-1" src="./photos/tool.jpg" alt="tool-screenshot" />
+                <div  className="h6 p-2 pt-4"><a href="https://tool-track.herokuapp.com/" >Link to Live Website</a></div>
+                <div  className="h6 p-2"><a href="https://github.com/jeyansaran620/Tracker" >Link to Git Repository</a></div>
             </div>
         );
     };
@@ -190,6 +198,10 @@ const Profile =() => {
         {
             title:"Projects",
             content:Project()
+        },
+        {
+            title:"Hobby Games",
+            content:HobbyGames()
         },
         {
             title:"Maaya Kannadi",
@@ -224,7 +236,7 @@ const Profile =() => {
     return (
         <div>
             <div className="container">
-                <div  className="row row-content"> 
+                <div  className="row row-content justify-content-center"> 
                     {GiveList()}
                 </div>
             </div>

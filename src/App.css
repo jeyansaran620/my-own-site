@@ -23,3 +23,9 @@ a {
   background-color: rgba(75, 78, 88, 0.86);
   color: floralwhite;
 }
+.screen-shot
+{
+  width: 90%;
+  border: solid 2px floralwhite;
+  border-radius: 10px;
+}
