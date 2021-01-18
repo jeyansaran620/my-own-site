@@ -4,7 +4,7 @@ import {Navbar, NavbarBrand, Nav, NavbarToggler,
 import { withRouter } from "react-router-dom";
 import { NavLink } from 'react-router-dom';
 
-class NavigBar extends React.Component{
+class NaviBar extends React.Component{
   
     constructor(props) {
         super(props);
@@ -92,4 +92,4 @@ class NavigBar extends React.Component{
     }
 }
 
-export default withRouter(NavigBar);
+export default withRouter(NaviBar);

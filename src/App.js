@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import NavigBar from './components/NaviBar';
+import NaviBar from './components/NaviBar';
 import Footer from './components/Footer';
 import PlayerList from './components/playerList';
 import Interact from './components/Interact';
@@ -13,7 +13,7 @@ import { Route, Switch , Redirect } from "react-router-dom";
 const App = () => {
     return (
         <div> 
-            <NavigBar />
+            <NaviBar />
             <Switch >
                 <Route exact  path="/Home" component={Profile} />
                 <Route  path="/About" component={About} />
