@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import NaviBar from './components/NaviBar';
 import Footer from './components/Footer';
-import PlayerList from './components/playerList';
+import PlayerList from './components/PlayerList';
 import Interact from './components/Interact';
 import About from './components/About';
 import Profile from './components/Profile';
