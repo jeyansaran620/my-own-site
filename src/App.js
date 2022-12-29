@@ -8,8 +8,6 @@ import About from './components/About';
 import Profile from './components/Profile';
 import { Route, Switch , Redirect } from "react-router-dom";
 
-
-
 const App = () => {
     return (
         <div> 
