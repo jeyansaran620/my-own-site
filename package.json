@@ -19,7 +19,7 @@
     "react-dom": "^16.13.1",
     "react-popper": "^2.2.3",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "reactstrap": "^8.5.1"
   },
   "scripts": {
@@ -45,7 +45,7 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^6.6.0",
+    "eslint": "^9.39.1",
     "eslint-plugin-react": "^7.21.5"
   }
 }
